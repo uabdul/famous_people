@@ -28,10 +28,8 @@ client.connect((err) => {
 });
 
 function parseResults(arr) {
-  let counter = 1
   arr.forEach((element, index) => {
     let birthdate = element.birthdate.toDateString();
     console.log(`- ${index + 1}: ${element.first_name} ${element.last_name}, born ${birthdate}`);
-    counter += 1
   })
 }
